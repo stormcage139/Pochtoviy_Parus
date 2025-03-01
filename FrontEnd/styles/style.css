@@ -2,6 +2,25 @@
     margin: 0;
     padding: 0;
 }
+html{
+    font-family: "Montserrat", serif;
+    /* мб такой шрифт,мне больше нрав,но он лучше для латинницы */
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.title-2>.title-1{
+    margin-left: 1.5rem;
+}
+.title-1>p{
+    color: white;
+}
+.title-1>a{
+    display: flex;
+    align-items: center;
+}
+.main-name{
+    font-size: 3rem;
+}
 .parent{
     display: flex;
     /* background-color: antiquewhite; */
@@ -21,6 +40,7 @@
     justify-content: space-between;
     align-items: center;
     display: flex;
+    position: relative;
     /* background-color: antiquewhite; */
 }
 .title-1{
@@ -38,8 +58,43 @@
 
 a{
     text-decoration: none;
-    color: inherit;
-}
-/* @media(max-width:1038px){
+    color: white;
 
-} */
+}
+.title-2-adaptived{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.help-list-adaptived{
+    display: none;
+    position: absolute;
+    background-color: blue;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+}
+.help-list-adaptived>a{
+    text-align: center;
+}
+.title-2-adaptived{
+    display: none;
+}
+.title-2-adaptived:hover> .help-list-adaptived{
+    display: flex;
+}
+.a-will-gone{
+    display: block;
+}
+@media(max-width:700px){
+    .a-will-gone{
+        display: none;
+    }
+    .title-2-will-gone{
+        display: None;
+    }
+    .title-2-adaptived{
+        display: block;
+    }
+}
