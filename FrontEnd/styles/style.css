@@ -40,7 +40,6 @@ html{
     justify-content: space-between;
     align-items: center;
     display: flex;
-    position: relative;
     /* background-color: antiquewhite; */
 }
 .title-1{
@@ -66,6 +65,65 @@ a{
     display: flex;
     justify-content: flex-end;
 }
+.list-main{
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    height: 400px;
+}
+.list {
+    border-bottom: solid 2px grey;
+    margin-bottom: 5px;
+    width: 750px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  .map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .map-container iframe {
+    width: 90%;
+    max-width: 1200px;
+    height: 500px;
+    border: none;
+    border-radius: 8px;
+  }
+
+  /* Адаптация для планшетов */
+  @media (max-width: 1024px) {
+    .map-container iframe {
+      height: 400px;
+    }
+  }
+
+  /* Адаптация для мобильных устройств */
+  @media (max-width: 768px) {
+    .map-container iframe {
+      width: 100%;
+      height: 300px;
+    }
+  }
+
+  /* Для совсем маленьких экранов */
+  @media (max-width: 480px) {
+    .map-container iframe {
+      height: 250px;
+    }
+  }
+/* @media(max-width:1038px){
 
 .help-list-adaptived{
     display: none;
