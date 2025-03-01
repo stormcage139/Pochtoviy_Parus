@@ -12,7 +12,7 @@
 <body>
 
   <header>
-    <div class="title" style="background-color: blue;">
+    <div class="nav-bar" style="background-color: blue;">
         <div style="color: blue;" class="title-1">
             <img style="width: 90px;" src="static/images/parus.png" alt="">
             <a class="main-name a-will-gone" href="">Почтовый парус</a>
@@ -50,7 +50,7 @@
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
                   </svg>
             </a>
-            <div class="help-list-adaptived">
+            <div class="undisplayed-list">
                 <div>
                     <a class="display-flex" href="">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-question-circle-fill" viewBox="0 0 16 16">
@@ -83,22 +83,24 @@
     <div class="map-container">
       <iframe src="https://yandex.ru/map-widget/v1/?ll=36.258414%2C54.512820&z=14" allowfullscreen></iframe>
     </div>
-    <div style="display: flex;justify-content: center;">
+    <div>
+      <div class="srch-lst-container">
         <form>
             <input style="width: 700px;" type="search" name="text" class="search" placeholder="Поиск">
             <input type="submit" name="submit" class="submit" value="Найти">
-          </form>
-    </div>
-    <div class="list-main">
-        <div class="list">
-            <img style="width: 80px;" src="parus.png" alt="">ул. Генерала Попова
+        </form>
+        <div class="list-main">
+            <div class="list">
+                <img style="width: 80px;" src="parus.png" alt="">ул. Генерала Попова
+            </div>
+            <div class="list">
+                <img style="width: 80px;" src="parus.png" alt="">ул. Генерала Попова
+            </div>
+            <div class="list">
+                <img style="width: 80px;" src="parus.png" alt="">ул. Генерала Попова
+            </div>
         </div>
-        <div class="list">
-            <img style="width: 80px;" src="parus.png" alt="">ул. Генерала Попова
-        </div>
-        <div class="list">
-            <img style="width: 80px;" src="parus.png" alt="">ул. Генерала Попова
-        </div>
+      </div>
     </div>
   </main>
   <footer>

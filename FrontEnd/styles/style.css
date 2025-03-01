@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
 }
 html{
-    font-family: "Montserrat", serif;
+    font-family: "Lato", serif;
     /* мб такой шрифт,мне больше нрав,но он лучше для латинницы */
     font-optical-sizing: auto;
     font-style: normal;
@@ -37,19 +39,22 @@ html{
     transform: translateY(-10px);
     /* box-shadow: 0 10px 20px rgba(255, 255, 255, 0.7); */
 }
-.title{
+.nav-bar{
     justify-content: space-between;
     align-items: center;
     display: flex;
-    /* background-color: antiquewhite; */
+    /* background-color: antiquewhite; */   
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
 }
 .title-1{
+    position: relative;
     align-items: center;
     display: flex;
     font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 .title-2{
+    padding-right: 2rem;
     display: flex;
     justify-content: right;
     /* background-color: aqua; */
@@ -61,7 +66,6 @@ a{
 }
 .title-2-adaptived{
     display: none;
-    position: relative;
     justify-content: flex-end;
 }
 .list-main{
@@ -75,10 +79,10 @@ a{
     margin-bottom: 5px;
     width: 750px;
 }
-.help-list-adaptived{
+.undisplayed-list{
     display: none;
     position: absolute;
-    right: 12%;
+    right: 0%;
     background-color: blue;
     flex-direction: column;
     justify-content: flex-end;
@@ -89,9 +93,6 @@ a{
 .to-open-list-adaptived{
     display: none;
 }
-  body {
-    font-family: Arial, sans-serif;
-  }
 
   .map-container {
     display: flex;
@@ -108,7 +109,11 @@ a{
     border: none;
     border-radius: 8px;
   }
-
+.srch-lst-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
   /* Адаптация для планшетов */
   @media (max-width: 1024px) {
     .map-container iframe {
@@ -117,7 +122,7 @@ a{
     .a-will-gone{
         font-size: 1.7rem;
     }
-    .help-list-adaptived>a{
+    .undisplayed-list>a{
         text-align: center;
     }
     .a-will-gone{
@@ -145,11 +150,11 @@ a{
         display: block;
         font-size: 1.5rem;
     }
-    .title-2-adaptived:hover> .help-list-adaptived{
+    .title-2-adaptived:hover> .undisplayed-list{
         display: flex;
         flex-direction: column;
     }
-    .help-list-adaptived>div{
+    .undisplayed-list>div{
         padding-top: 1rem;
     }
   }
@@ -165,7 +170,7 @@ a{
     }
   }
 /* @media(max-width:1038px){
-    .help-list-adaptived{
+    .undisplayed-list{
         display: none;
         position: absolute;
         background-color: blue;
@@ -173,13 +178,13 @@ a{
         justify-content: flex-end;
         width: 100%;
     }
-    .help-list-adaptived>a{
+    .undisplayed-list>a{
         text-align: center;
     }
     .title-2-adaptived{
         display: none;
     }
-    .title-2-adaptived:hover> .help-list-adaptived{
+    .title-2-adaptived:hover> .undisplayed-list{
         display: flex;
     }
     .a-will-gone{
