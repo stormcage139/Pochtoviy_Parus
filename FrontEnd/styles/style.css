@@ -72,12 +72,14 @@ a{
     align-items: center;
     flex-direction: column;
     display: flex;
-    height: 400px;
+    width: 70%;
 }
-.list {
+.list-item {
+    display: flex;
+    align-items: center;
     border-bottom: solid 2px grey;
     margin-bottom: 5px;
-    width: 750px;
+    width: 70%;
 }
 .undisplayed-list{
     display: none;
@@ -113,6 +115,17 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.search-form{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+.search{
+    width: 80%;
+}
+.submit{
+    margin-left: 1rem;
 }
   /* Адаптация для планшетов */
   @media (max-width: 1024px) {
@@ -167,6 +180,9 @@ a{
     }
     .to-open-list-adaptived{
         display: block;
+    }
+    .main-name{
+        text-align: center;
     }
   }
 /* @media(max-width:1038px){
