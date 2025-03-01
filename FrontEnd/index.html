@@ -1,28 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="shortcut icon" href="static/images/Frame 4.png" type="image/x-icon">
-    <title>Почтовый Парус</title>
+  <meta charset="utf-8">
+  <title>Почтовый парус</title>
+  <style>
+    .parent{
+        display: flex;
+        /* background-color: antiquewhite; */
+        height: 44rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .icon{
+        /* border-radius: 10px; */
+        width: 200px;
+        transition: transform 0.3s ease;
+    }
+    .icon:hover{
+        transform: translateY(-10px);
+        /* box-shadow: 0 10px 20px rgba(255, 255, 255, 0.7); */
+    }
+    .title{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        /* background-color: antiquewhite; */
+    }
+    .title-1{
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .title-2{
+        display: flex;
+        justify-content: right;
+        width: 82%;
+        /* background-color: aqua; */
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="div-nav-bar">
-            <a href="">52</a>
-            <a href="">Главная</a>
-            <a href="">Профиль</a>
+  <main>
+    <div class="title">
+        <img style="width: 60px;" src="parus.png" alt="">
+        <div style="color: blue;" class="title-1">
+            Почтовый парус
         </div>
-    </header>
-    <main>
-        <section>
-            <img src="static/images/Frame 4.png" alt="">
-        </section>
-    </main>
-    <footer></footer>
+        <div class="title-2">
+            <img style="height: 25px; margin-top: 5px;" src="parus.png" alt="">
+            <div class="title-1">
+                Помощь
+            </div>
+            <img style="height: 25px; margin-top: 5px;" src="parus.png" alt="">
+            <div class="title-1">
+                Отделения
+            </div>
+            <img style="height: 25px; margin-top: 5px;" src="parus.png" alt="">
+            <div class="title-1">
+                Войти
+            </div>
+        </div>
+    </div>
+    <div class="title">
+        <div style="color: blue;" class="title-1">
+            Почтовый парус
+        </div>
+        <div class="title-2">
+            <div class="title-1">
+                Помощь
+            </div>
+            <div class="title-1">
+                Отделения
+            </div>
+            <div class="title-1">
+                Войти
+            </div>
+        </div>
+    </div>
+    <div class="parent">
+        <div class="icon">
+            <img src="parus.png" alt="">
+        </div>
+    </div>
+  </main>
 </body>
 </html>
